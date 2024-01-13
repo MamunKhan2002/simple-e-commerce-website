@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #E02C6D;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+footer {
+    background-color: #0A0826;
+    padding-block: 50px;
+    text-align: center;
+    color: #FFF;
+}
+
+footer .section-title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer .description {
+    font-family: Manrope;
+    margin: 3px 0;
+    color: #D9DBE1;
+}
+
+footer .social-icons {
+    margin-top: 17px;
+}
+
+footer .social-icons .fa-brands {
+    color: #fff;
+    width: 32px;
+    height: 32px;
+}
