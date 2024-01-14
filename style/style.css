@@ -17,6 +17,12 @@ main {
     margin: 0 auto;
 }
 
+.section-title {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 .section-description {
     margin-block: 16px;
     font-family: Poppins;
@@ -25,10 +31,13 @@ main {
 
 .primary-btn {
     background-color: var(--primary-color);
+    padding-inline: 24px;
+    padding-block: 10px;
+    outline: 0;
+    border: 0;
 }
 
 .primary-btn a {
-    /* background-color: #E02C6D; */
     color: #FFF;
     font-family: Poppins;
     font-size: 1rem;
@@ -36,10 +45,91 @@ main {
     text-decoration: none;
 }
 
+.fa-arrow-right {
+    margin-left: 3px;
+}
+
+/*--------Logo, Nav, Banner Style Start-------- */
+header {
+    margin: 87px 120px 0 120px;
+}
+
+.logo {
+    width: 243px;
+}
+
+.important {
+    color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .ul-container {
+    display: flex;
+    gap: 32px;
+}
+
+nav .ul-container li {
+    list-style-type: none;
+}
+
+nav .ul-container li a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Poppins;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+
+/*-----------Banner Design Start--------- */
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 70px 0;
+    align-items: center;
+    gap: 130px;
+}
+
+.banner-container .banner-content .banner-title {
+    max-width: 582px;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+
+.banner-container .banner-content .banner-description {
+    color: #6C6C6C;
+}
+
+.banner-btn {
+    border-radius: 41px;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+}
+
+.main-img {
+    position: absolute;
+    width: 90%;
+    top: 45px;
+    left: 5px;
+}
 
 
 
-
+/* ---------features-products Section Design Start---------- */
 .featured-container {
     display: flex;
     justify-content: space-between;
@@ -56,14 +146,6 @@ main {
 
 .featured-container .features-content p {
     color: #6C6C6C;
-    /* max-width: 501px; */
-}
-
-.features-products-btn {
-    padding-inline: 24px;
-    padding-block: 5px;
-    outline: 0;
-    border: 0;
 }
 
 /*--------Footer Section Style Start--------*/
@@ -72,12 +154,6 @@ footer {
     padding-block: 50px;
     text-align: center;
     color: #FFF;
-}
-
-footer .section-title {
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
 }
 
 footer .description {
@@ -97,17 +173,36 @@ footer .social-icons .fa-brands {
 }
 
 /* ========================================= */
+/*--------Mobile Device Responsive Design--------*/
 
-@media screen and (max-width:576px){
-    .featured-container{
+@media screen and (max-width:576px) {
+    header{
+        margin-inline: 10px;
+    }
+    .logo{
+        margin-inline: auto;
+    }
+    .featured-container {
         flex-direction: column;
     }
-    .featured-container img{
+
+    .banner-container {
+        flex-direction: column-reverse;
+    }
+
+    nav .ul-container {
+        display: none;
+    }
+
+    .featured-container img {
         width: 100%;
     }
 }
-@media screen and (min-width:576px) and (max-width:992px){
-    .featured-container{
+/*--------Tablet Device Responsive Design--------*/
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .featured-container,
+    .banner-container {
         flex-direction: column;
     }
 }
